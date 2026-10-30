@@ -1,0 +1,345 @@
+# Admin panel (Pages CMS) for the SPMG website.
+# This file defines the forms shown at https://app.pagescms.org
+# Only the repository owner can change this file.
+
+media:
+  input: media
+  output: /media
+  categories: [image]
+
+content:
+  # ---------------- EQUIPMENT ----------------
+  - name: equipment
+    label: Equipment
+    type: file
+    path: content/equipment.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Equipment name (shown as the title)
+        type: string
+        required: true
+      - name: model
+        label: Brand / model
+        description: Hidden on the website while "Show brand names" is off in Group info.
+        type: string
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [Printing, Recycling & preparation, Testing & inspection, Post-processing]
+      - name: description
+        label: Description
+        type: text
+      - name: photo
+        label: Photo (landscape, brand logos hidden)
+        type: image
+        options:
+          path: media/equipment
+      - name: is_new
+        label: Show a "New" badge
+        type: boolean
+        default: false
+
+  # ---------------- PEOPLE ----------------
+  - name: people
+    label: People & Alumni
+    type: file
+    path: content/people.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Full name
+        description: For Mawhiba/Ibdaa students under 18, use first name only and no photo unless a guardian has agreed.
+        type: string
+        required: true
+      - name: status
+        label: Status
+        description: Change to Alumni when someone graduates or leaves. They move to the Alumni list automatically.
+        type: select
+        default: Current
+        options:
+          values: [Current, Alumni]
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [Principal Investigator, Postdoctoral Researcher, Research Staff, Visiting Researcher, PhD Student, MS Student, Undergraduate Student, Mawhiba Student, Ibdaa Student]
+      - name: title
+        label: Title shown under the name
+        description: e.g. Ph.D. Student, Postdoctoral Fellow, Mawhiba Program 2026
+        type: string
+      - name: topic
+        label: Research topic (one line)
+        type: string
+      - name: bio
+        label: Short bio (Principal Investigator only)
+        type: text
+      - name: years
+        label: Years in the group
+        description: e.g. 2024–2027
+        type: string
+      - name: now_at
+        label: Now at (alumni only)
+        description: e.g. Aramco, SABIC, PhD at University X
+        type: string
+      - name: photo
+        label: Photo (square)
+        type: image
+        options:
+          path: media/people
+      - name: link
+        label: Profile link (LinkedIn, Scholar, etc.)
+        type: string
+
+  # ---------------- PUBLICATIONS ----------------
+  - name: publications
+    label: Publications
+    type: file
+    path: content/publications.json
+    format: json
+    list: true
+    fields:
+      - name: year
+        label: Year
+        type: number
+        required: true
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: authors
+        label: Authors
+        type: string
+      - name: journal
+        label: Journal / conference
+        type: string
+      - name: type
+        label: Type
+        type: select
+        default: Journal article
+        options:
+          values: [Journal article, Conference paper, Book chapter, Patent]
+      - name: link
+        label: DOI or link (https://doi.org/...)
+        type: string
+
+  # ---------------- NEWS & EVENTS ----------------
+  - name: events
+    label: News & Events
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        description: Future dates are shown as "Upcoming".
+        type: date
+        required: true
+      - name: category
+        label: Type
+        type: select
+        default: News
+        options:
+          values: [News, Event, Conference, Workshop, Award, Visit, Publication]
+      - name: location
+        label: Location
+        type: string
+      - name: summary
+        label: Summary (2-3 sentences)
+        type: text
+      - name: photo
+        label: Photo (landscape)
+        type: image
+        options:
+          path: media/events
+      - name: link
+        label: Link for more details
+        type: string
+
+  # ---------------- MATERIALS ----------------
+  - name: materials
+    label: Materials
+    type: file
+    path: content/materials.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Material (e.g. PEEK, CF-PLA, rPET)
+        type: string
+        required: true
+      - name: form
+        label: Form
+        type: select
+        options:
+          values: [Filament, Pellets, Powder, Resin, Sheet, Flakes]
+      - name: type
+        label: Type
+        description: e.g. Standard, Carbon-fiber reinforced, High-performance, Recycled
+        type: string
+      - name: is_new
+        label: Show a "New" tag
+        type: boolean
+        default: false
+
+  # ---------------- RESEARCH AREAS ----------------
+  - name: research
+    label: Research Areas
+    type: file
+    path: content/research.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Research area
+        type: string
+        required: true
+      - name: text
+        label: Description
+        type: text
+
+  # ---------------- GROUP INFO & PAGES ----------------
+  - name: settings
+    label: Group info, Collaborate, Join, Contact
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: group_name
+        label: Group name
+        type: string
+      - name: short_name
+        label: Short name
+        type: string
+      - name: tagline
+        label: Tagline (under the title)
+        type: text
+      - name: department
+        label: Department line
+        type: string
+      - name: logo
+        label: Logo
+        type: image
+      - name: show_model_names
+        label: Show brand names of equipment
+        type: boolean
+        default: false
+      - name: show_empty_groups
+        label: Show empty team groups with "Names to be added"
+        type: boolean
+        default: false
+      - name: about
+        label: About the group
+        type: object
+        fields:
+          - name: text
+            label: About text
+            type: text
+          - name: keywords
+            label: Keywords
+            type: string
+            list: true
+      - name: collaborate
+        label: Collaborate section
+        type: object
+        fields:
+          - name: intro
+            label: Introduction
+            type: text
+          - name: expertise
+            label: Expertise cards
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+          - name: ways
+            label: Ways to collaborate
+            type: string
+            list: true
+          - name: partners
+            label: Partners (organisation names)
+            type: string
+            list: true
+      - name: join
+        label: Join Us section
+        type: object
+        fields:
+          - name: intro
+            label: Introduction
+            type: text
+          - name: positions
+            label: Open positions
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Position title
+                type: string
+              - name: level
+                label: Level
+                type: select
+                options:
+                  values: [PhD, MS, Postdoc, Undergraduate, Visiting researcher]
+              - name: description
+                label: Description
+                type: text
+              - name: open
+                label: Still open
+                type: boolean
+                default: true
+          - name: looking_for
+            label: What we look for
+            type: string
+            list: true
+          - name: how_to_apply
+            label: How to apply
+            type: text
+          - name: programs_link
+            label: Graduate programs link
+            type: string
+      - name: contact
+        label: Contact details
+        type: object
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: phone
+            label: Phone
+            type: string
+          - name: location
+            label: Office
+            type: string
+          - name: address
+            label: Address
+            type: string
+      - name: profiles
+        label: Profile links (the first one gets the QR code)
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: url
+            label: Link
+            type: string
