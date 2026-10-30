@@ -13,7 +13,7 @@
     "category": "Post-processing",
     "description": "Photopolymer curing system used for post-curing resin-printed parts and improving final polymerization.",
     "photo": "/media/equipment/resin-wash-cure.jpg",
-    "is_new": false
+    "is_new": true
   },
   {
     "name": "Large-Format Printer",
@@ -25,7 +25,6 @@
   },
   {
     "name": "Optical Microscopy Workstation",
-    "model": "",
     "category": "Testing & inspection",
     "description": "Imaging and inspection setup for microstructure, defects, and printed surface evaluation.",
     "photo": "/media/equipment/optical-microscope.jpg",
@@ -37,7 +36,7 @@
     "category": "Recycling & preparation",
     "description": "Filament extrusion and recycling system supporting closed-loop polymer reuse and circular manufacturing.",
     "photo": "/media/equipment/filament-extruder.jpg",
-    "is_new": false
+    "is_new": true
   },
   {
     "name": "High-Temperature 3D Printer",
@@ -45,7 +44,7 @@
     "category": "Printing",
     "description": "High-temperature 3D printing system for advanced polymers such as PEEK, PEI, and engineering thermoplastics.",
     "photo": "/media/equipment/high-temp-printer.jpg",
-    "is_new": false
+    "is_new": true
   },
   {
     "name": "Polymer Drying Oven",
@@ -73,18 +72,14 @@
   },
   {
     "name": "Digital Image Correlation (DIC) System",
-    "model": "",
     "category": "Testing & inspection",
     "description": "Non-contact, full-field measurement of strain and displacement during mechanical testing of printed and recycled polymer specimens.",
-    "photo": "",
     "is_new": true
   },
   {
     "name": "3D Scanner",
-    "model": "",
     "category": "Testing & inspection",
     "description": "Captures the geometry of printed parts for dimensional-accuracy checks and comparison against CAD models.",
-    "photo": "",
     "is_new": true
   }
 ]
