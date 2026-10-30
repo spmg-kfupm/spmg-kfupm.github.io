@@ -5,6 +5,8 @@
     "category": "Principal Investigator",
     "title": "Assistant Professor, Mechanical Engineering",
     "bio": "Expert in sustainable manufacturing, additive manufacturing, coatings, surface texturing and Industry 4.0. Ph.D. from McMaster University, Canada (2020). Licensed Professional Engineer (PEO, Canada) and PMP. Editorial Board Member, Engineering Science & Technology.",
+    "years": "2024-Present",
+    "photo": "/media/people/Dr. Yassmin.jpg",
     "link": "https://scholar.google.com/citations?user=v8-WaMgAAAAJ&hl=en"
   },
   {
@@ -28,7 +30,8 @@
     "name": "Dr. Rashad",
     "status": "Current",
     "category": "Postdoctoral Researcher",
-    "years": "2025-Present"
+    "years": "2025-Present",
+    "photo": "/media/people/Dr. Rashad.jpg"
   },
   {
     "name": "Sherif ",
