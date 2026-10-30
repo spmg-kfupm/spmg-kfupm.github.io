@@ -1,0 +1,92 @@
+{
+  "group_name": "Sustainable Polymer Manufacturing Group",
+  "short_name": "SPMG",
+  "tagline": "Advancing sustainable manufacturing through additive manufacturing, recycled polymers, polymer composites, polymer coatings, digital twins, and machine learning-driven process optimization.",
+  "department": "Department of Mechanical Engineering · KFUPM · Dhahran, Saudi Arabia",
+  "logo": "/media/logo.png",
+  "show_model_names": false,
+  "show_empty_groups": false,
+  "about": {
+    "text": "The Sustainable Polymer Manufacturing Group focuses on developing environmentally responsible polymer manufacturing technologies. Our work combines additive manufacturing, polymer recycling, high-performance composites, polymer coating, advanced characterization, and artificial intelligence to support circular and smart manufacturing.",
+    "keywords": [
+      "Additive Manufacturing",
+      "Recycled Polymers",
+      "Polymer Coating",
+      "Machine Learning",
+      "Digital Twins",
+      "Polymer Composites",
+      "Sustainable Manufacturing"
+    ]
+  },
+  "collaborate": {
+    "intro": "We work with academic and industrial partners on sustainable polymer manufacturing, from recycled feedstock development to printing, testing and data-driven optimization. If your work involves polymers, additive manufacturing or manufacturing data, we would be glad to talk.",
+    "expertise": [
+      {
+        "title": "High-temperature and composite printing",
+        "text": "Printing and characterizing PEEK, PEI and carbon- or glass-fiber reinforced grades for demanding applications."
+      },
+      {
+        "title": "Recycled feedstocks",
+        "text": "Turning post-consumer and post-industrial polymers into filament and pellets, with drying and extrusion in-house."
+      },
+      {
+        "title": "Mechanical and dimensional characterization",
+        "text": "Full-field strain measurement with digital image correlation, optical microscopy, and 3D scanning of printed parts."
+      },
+      {
+        "title": "Machine learning and digital twins",
+        "text": "Process–structure–property models, defect prediction, and optimization of manufacturing parameters."
+      },
+      {
+        "title": "Coatings and surface engineering",
+        "text": "Coating and surface-texturing strategies for adhesion, wear resistance and durability."
+      }
+    ],
+    "ways": [
+      "Joint research projects and funding proposals",
+      "Industry-sponsored studies on materials and processes",
+      "Co-supervision of graduate students",
+      "Visiting researchers and student exchange",
+      "Prototyping and testing on our equipment, by arrangement"
+    ],
+    "partners": []
+  },
+  "join": {
+    "intro": "We welcome motivated MS and PhD applicants, postdoctoral researchers and undergraduate students who want to work on sustainable manufacturing with real machines and real data.",
+    "looking_for": [
+      "A degree in mechanical, materials, manufacturing, chemical or polymer engineering, or a related field",
+      "Interest in additive manufacturing, polymers, recycling or data-driven manufacturing",
+      "Hands-on curiosity: you enjoy designing experiments and building things",
+      "Clear scientific writing in English, or the drive to develop it"
+    ],
+    "positions": [],
+    "how_to_apply": "Graduate applications go through KFUPM's admissions process. Before applying, email Dr. Yassmin Seid Ahmed with your CV, transcripts, and a short note (about one page) on the research you would like to do in the group.",
+    "programs_link": "https://me.kfupm.edu.sa/academic-programs/graduate-programs"
+  },
+  "contact": {
+    "name": "Dr. Yassmin Seid Ahmed",
+    "title": "Assistant Professor, Mechanical Engineering Department, KFUPM",
+    "email": "yassmin.seidahmed@kfupm.edu.sa",
+    "phone": "+966-13-860-1330 (ME Dept)",
+    "location": "63-337 KFUPM",
+    "address": "King Fahd University of Petroleum & Minerals, Dhahran, Saudi Arabia"
+  },
+  "profiles": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=v8-WaMgAAAAJ&hl=en"
+    },
+    {
+      "label": "KFUPM Faculty Page",
+      "url": "https://me.kfupm.edu.sa/people/faculty/faculty-details/dr.--yassmin-abdelmohsen-ahmed-seid-ahmed"
+    },
+    {
+      "label": "KFUPM Research Portal",
+      "url": "https://pure.kfupm.edu.sa/en/persons/yassmin-seid-ahmed/"
+    },
+    {
+      "label": "Group LinkedIn Page",
+      "url": ""
+    }
+  ]
+}

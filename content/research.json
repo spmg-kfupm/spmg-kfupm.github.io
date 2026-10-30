@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Sustainable Polymer Processing",
+    "text": "Development of greener material processing routes for virgin, recycled, and post-consumer polymers."
+  },
+  {
+    "title": "Additive Manufacturing of Composites",
+    "text": "FFF, resin printing, high-temperature printing, and carbon-fiber reinforced polymer manufacturing."
+  },
+  {
+    "title": "Polymer Coating",
+    "text": "Surface modification and coating strategies for improving polymer functionality, adhesion, durability, and performance."
+  },
+  {
+    "title": "AI-Driven Manufacturing",
+    "text": "Machine learning models for process–structure–property mapping, defect prediction, and optimization."
+  },
+  {
+    "title": "Digital Twins & Monitoring",
+    "text": "Data-driven digital twins for quality prediction, surface quality control, and manufacturing intelligence."
+  }
+]

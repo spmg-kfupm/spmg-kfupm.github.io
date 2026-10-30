@@ -1,0 +1,90 @@
+[
+  {
+    "name": "High-Resolution Resin 3D Printer",
+    "model": "Creality HALOT 14K",
+    "category": "Printing",
+    "description": "High-resolution resin 3D printer for precision polymer parts and micro-feature fabrication.",
+    "photo": "/media/equipment/resin-printer.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Resin Post-Curing Station",
+    "model": "Creality",
+    "category": "Post-processing",
+    "description": "Photopolymer curing system used for post-curing resin-printed parts and improving final polymerization.",
+    "photo": "/media/equipment/resin-wash-cure.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Large-Format Printer",
+    "model": "Piocreat",
+    "category": "Printing",
+    "description": "Large-format polymer additive manufacturing platform for structural components and scale-up studies.",
+    "photo": "/media/equipment/large-format-printer.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Optical Microscopy Workstation",
+    "model": "",
+    "category": "Testing & inspection",
+    "description": "Imaging and inspection setup for microstructure, defects, and printed surface evaluation.",
+    "photo": "/media/equipment/optical-microscope.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Filament Extrusion & Recycling System",
+    "model": "ProtoCycler V3",
+    "category": "Recycling & preparation",
+    "description": "Filament extrusion and recycling system supporting closed-loop polymer reuse and circular manufacturing.",
+    "photo": "/media/equipment/filament-extruder.jpg",
+    "is_new": false
+  },
+  {
+    "name": "High-Temperature 3D Printer",
+    "model": "INTAMSYS FUNMAT HT",
+    "category": "Printing",
+    "description": "High-temperature 3D printing system for advanced polymers such as PEEK, PEI, and engineering thermoplastics.",
+    "photo": "/media/equipment/high-temp-printer.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Polymer Drying Oven",
+    "model": "ScieNovo",
+    "category": "Recycling & preparation",
+    "description": "Controlled drying system for moisture-sensitive polymers and recycled filament preparation.",
+    "photo": "/media/equipment/drying-oven.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Carbon-Fiber Composite 3D Printer",
+    "model": "Raise3D E2CF",
+    "category": "Printing",
+    "description": "Carbon-fiber reinforced polymer 3D printing system for composite material development.",
+    "photo": "/media/equipment/cf-composite-printer.jpg",
+    "is_new": false
+  },
+  {
+    "name": "High-Speed Multi-Material FFF Printer",
+    "model": "Bambu Lab X1 Carbon with AMS",
+    "category": "Printing",
+    "description": "High-speed, multi-material FFF system for polymer prototyping and multi-material manufacturing.",
+    "photo": "/media/equipment/multi-material-printer.jpg",
+    "is_new": false
+  },
+  {
+    "name": "Digital Image Correlation (DIC) System",
+    "model": "",
+    "category": "Testing & inspection",
+    "description": "Non-contact, full-field measurement of strain and displacement during mechanical testing of printed and recycled polymer specimens.",
+    "photo": "",
+    "is_new": true
+  },
+  {
+    "name": "3D Scanner",
+    "model": "",
+    "category": "Testing & inspection",
+    "description": "Captures the geometry of printed parts for dimensional-accuracy checks and comparison against CAD models.",
+    "photo": "",
+    "is_new": true
+  }
+]

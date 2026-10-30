@@ -1,0 +1,50 @@
+[
+  {
+    "name": "PLA",
+    "form": "Filament",
+    "type": "Standard",
+    "is_new": false
+  },
+  {
+    "name": "ABS",
+    "form": "Filament",
+    "type": "Standard",
+    "is_new": false
+  },
+  {
+    "name": "CF-PLA",
+    "form": "Filament",
+    "type": "Carbon-fiber reinforced",
+    "is_new": false
+  },
+  {
+    "name": "CF-ABS",
+    "form": "Filament",
+    "type": "Carbon-fiber reinforced",
+    "is_new": false
+  },
+  {
+    "name": "PEEK",
+    "form": "Filament",
+    "type": "High-performance",
+    "is_new": false
+  },
+  {
+    "name": "CF-PEEK",
+    "form": "Filament",
+    "type": "High-performance, carbon-fiber reinforced",
+    "is_new": false
+  },
+  {
+    "name": "GF-PEEK",
+    "form": "Filament",
+    "type": "High-performance, glass-fiber reinforced",
+    "is_new": false
+  },
+  {
+    "name": "PLA",
+    "form": "Pellets",
+    "type": "Standard",
+    "is_new": false
+  }
+]
