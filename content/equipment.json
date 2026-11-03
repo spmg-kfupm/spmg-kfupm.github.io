@@ -80,6 +80,7 @@
     "name": "3D Scanner",
     "category": "Testing & inspection",
     "description": "Captures the geometry of printed parts for dimensional-accuracy checks and comparison against CAD models.",
+    "photo": "/media/equipment/3d scannerpng.png",
     "is_new": true
   },
   {
@@ -92,7 +93,6 @@
   },
   {
     "name": "Plastic Shredder",
-    "model": "",
     "category": "Recycling & preparation",
     "description": "Shreds plastic waste and failed prints into flakes that can be dried and re-extruded into recycled filament or pellets.",
     "photo": "/media/equipment/plastic-shredder.jpg",
@@ -108,7 +108,6 @@
   },
   {
     "name": "Parts Washer",
-    "model": "",
     "category": "Post-processing",
     "description": "Solvent parts-cleaning station for removing residue and contaminants from printed parts and tooling.",
     "photo": "/media/equipment/parts-washer.jpg",
