@@ -71,7 +71,7 @@
       '<h1 id="groupName">Sustainable Polymer Manufacturing Group</h1>' +
       '<p class="tagline" id="tagline"></p><p class="dept" id="dept"></p>' +
       '<div class="ctas"><a class="btn primary" href="collaborate.html">Collaborate with us</a><a class="btn ghost" href="join.html">Join the group</a></div>' +
-      '<div class="stats" id="stats"></div></div></header>';
+      '</div></header>';
   } else {
     headHtml = '<header class="pagehead"><div class="wrap">' +
       '<a class="brand" href="index.html"><div class="logo" id="logo"><span class="mono">SPMG</span></div><span id="groupName">Sustainable Polymer Manufacturing Group</span></a>' +
