@@ -59,7 +59,7 @@
     "model": "Raise3D E2CF",
     "category": "Printing",
     "description": "Carbon-fiber reinforced polymer 3D printing system for composite material development.",
-    "photo": "/media/equipment/cf-composite-printer.jpg",
+    "photo": "/media/equipment/cf-composite-printer-v2.jpg",
     "is_new": false
   },
   {
@@ -80,6 +80,38 @@
     "name": "3D Scanner",
     "category": "Testing & inspection",
     "description": "Captures the geometry of printed parts for dimensional-accuracy checks and comparison against CAD models.",
+    "is_new": true
+  },
+  {
+    "name": "Continuous-Fiber 3D Printer",
+    "model": "Fibre Seek",
+    "category": "Printing",
+    "description": "Prints thermoplastic parts reinforced with continuous fibers, such as carbon or glass, for strong and lightweight composite structures.",
+    "photo": "/media/equipment/continuous-fiber-printer.jpg",
+    "is_new": true
+  },
+  {
+    "name": "Plastic Shredder",
+    "model": "",
+    "category": "Recycling & preparation",
+    "description": "Shreds plastic waste and failed prints into flakes that can be dried and re-extruded into recycled filament or pellets.",
+    "photo": "/media/equipment/plastic-shredder.jpg",
+    "is_new": true
+  },
+  {
+    "name": "Dip Coater with Heated Chamber",
+    "model": "PTL-MMB01 Dip Coater",
+    "category": "Coating",
+    "description": "Programmable dip coater for applying uniform coatings at controlled withdrawal speeds, mounted over a temperature-controlled chamber for drying and curing.",
+    "photo": "/media/equipment/dip-coater.jpg",
+    "is_new": true
+  },
+  {
+    "name": "Parts Washer",
+    "model": "",
+    "category": "Post-processing",
+    "description": "Solvent parts-cleaning station for removing residue and contaminants from printed parts and tooling.",
+    "photo": "/media/equipment/parts-washer.jpg",
     "is_new": true
   }
 ]
