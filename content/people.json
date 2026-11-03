@@ -35,7 +35,7 @@
     "photo": "/media/people/Dr. Rashad.jpg"
   },
   {
-    "name": "Sherif ",
+    "name": "Sherif  Hassanen",
     "status": "Current",
     "category": "PhD Student",
     "topic": "Metamaterials ",
@@ -43,8 +43,13 @@
     "photo": "/media/people/Sherif.jpeg"
   },
   {
-    "name": "gggggghj",
-    "status": "Alumni",
-    "category": "MS Student"
+    "name": "LAYAN MESHAL ALMUTAIRI ",
+    "status": "Current",
+    "category": "Undergraduate Student"
+  },
+  {
+    "name": "LAYAN MESHAL ALMUTAIRI ",
+    "status": "Current",
+    "category": "Undergraduate Student"
   }
 ]
