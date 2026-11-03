@@ -28,7 +28,7 @@ content:
         label: Category
         type: select
         options:
-          values: [Printing, Recycling & preparation, Testing & inspection, Post-processing]
+          values: [Printing, Recycling & preparation, Testing & inspection, Coating, Post-processing]
       - name: description
         label: Description
         type: text
