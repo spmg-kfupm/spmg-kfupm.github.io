@@ -48,8 +48,7 @@
       "Co-supervision of graduate students",
       "Visiting researchers and student exchange",
       "Prototyping and testing on our equipment, by arrangement"
-    ],
-    "partners": []
+    ]
   },
   "join": {
     "intro": "We welcome motivated MS and PhD applicants, postdoctoral researchers and undergraduate students who want to work on sustainable manufacturing with real machines and real data.",
@@ -59,7 +58,6 @@
       "Hands-on curiosity: you enjoy designing experiments and building things",
       "Clear scientific writing in English, or the drive to develop it"
     ],
-    "positions": [],
     "how_to_apply": "Graduate applications go through KFUPM's admissions process. Before applying, email Dr. Yassmin Seid Ahmed with your CV, transcripts, and a short note (about one page) on the research you would like to do in the group.",
     "programs_link": "https://me.kfupm.edu.sa/academic-programs/graduate-programs"
   },
@@ -68,7 +66,7 @@
     "title": "Assistant Professor, Mechanical Engineering Department, KFUPM",
     "email": "yassmin.seidahmed@kfupm.edu.sa",
     "phone": "+966-13-860-1330 (ME Dept)",
-    "location": "63-337 KFUPM",
+    "location": "63-206 KFUPM",
     "address": "King Fahd University of Petroleum & Minerals, Dhahran, Saudi Arabia"
   },
   "profiles": [
@@ -85,8 +83,7 @@
       "url": "https://pure.kfupm.edu.sa/en/persons/yassmin-seid-ahmed/"
     },
     {
-      "label": "Group LinkedIn Page",
-      "url": ""
+      "label": "Group LinkedIn Page"
     }
   ]
 }
