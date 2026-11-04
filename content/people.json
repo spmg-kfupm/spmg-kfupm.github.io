@@ -4,7 +4,7 @@
     "status": "Current",
     "category": "Principal Investigator",
     "title": "Assistant Professor, Mechanical Engineering",
-    "bio": "Expert in sustainable manufacturing, additive manufacturing, coatings, surface texturing, and Industry 4.0. Ph.D. from McMaster University, Canada (2021). Licensed Professional Engineer (PEO, Canada) and PMP. Editorial Board Member, Engineering Science & Technology.",
+    "bio": "Ph.D. from McMaster University, Canada. Licensed Professional Engineer (PEO, Canada) and PMP. ",
     "years": "2024-Present",
     "photo": "/media/people/Dr. Yassmin.jpg",
     "link": "https://scholar.google.com/citations?user=v8-WaMgAAAAJ&hl=en"
@@ -14,7 +14,7 @@
     "status": "Current",
     "category": "PhD Student",
     "title": "Ph.D. Student",
-    "topic": "Recycling post-consumer PET into FDM 3D-printing filament",
+    "topic": "Upcycling and recycling post-consumer polymer into valuable products",
     "years": "2026-Present",
     "photo": "/media/people/Osama.jpeg",
     "link": "https://www.linkedin.com/in/osama-fayyaz-733755224/"
@@ -23,22 +23,22 @@
     "name": "Abdurehman Abu Zeid",
     "status": "Current",
     "category": "PhD Student",
-    "topic": "Antifouling Coating",
+    "topic": "Polymer Coating",
     "years": "2025-Present",
     "photo": "/media/people/Abdurehman AbuZeid.jpeg"
   },
   {
-    "name": "Dr. Rashad",
+    "name": "Dr. Rashad Al-Hammadi ",
     "status": "Current",
     "category": "Postdoctoral Researcher",
     "years": "2025-Present",
     "photo": "/media/people/Dr. Rashad.jpg"
   },
   {
-    "name": "Sherif  Hassanen",
+    "name": "Sherif Hassanen",
     "status": "Current",
     "category": "PhD Student",
-    "topic": "Metamaterials ",
+    "topic": "Metamaterials and electromagnetic shielding",
     "years": "2025-Present",
     "photo": "/media/people/Sherif.jpeg"
   },
@@ -48,7 +48,17 @@
     "category": "Undergraduate Student"
   },
   {
-    "name": "LAYAN MESHAL ALMUTAIRI ",
+    "name": "SHAHAD BADER ALSHAMARI ",
+    "status": "Current",
+    "category": "Undergraduate Student"
+  },
+  {
+    "name": "Fatimah Mohammad ",
+    "status": "Current",
+    "category": "Undergraduate Student"
+  },
+  {
+    "name": "Rimas Abu Talib",
     "status": "Current",
     "category": "Undergraduate Student"
   }
