@@ -10,23 +10,6 @@
     "link": "https://scholar.google.com/citations?user=v8-WaMgAAAAJ&hl=en"
   },
   {
-    "name": "Osama Fayyaz",
-    "status": "Current",
-    "category": "PhD Student",
-    "title": "Ph.D. Student",
-    "topic": "Upcycling and recycling post-consumer polymer into valuable products",
-    "years": "2026-Present",
-    "photo": "/media/people/Osama.jpeg",
-    "link": "https://www.linkedin.com/in/osama-fayyaz-733755224/"
-  },
-  {
-    "name": "Abdurehman Abu Zeid",
-    "status": "Current",
-    "category": "PhD Student",
-    "topic": "Polymer Coating",
-    "years": "2025-Present"
-  },
-  {
     "name": "Dr. Rashad Al-Hammadi ",
     "status": "Current",
     "category": "Postdoctoral Researcher",
@@ -42,6 +25,23 @@
     "years": "2025-Present",
     "photo": "/media/people/Sherif.jpeg",
     "link": "https://www.linkedin.com/in/sherif-youssef-sherif-hassanen-974b23178?originalSubdomain=eg"
+  },
+  {
+    "name": "Abdurehman Abu Zeid",
+    "status": "Current",
+    "category": "PhD Student",
+    "topic": "Polymer Coating",
+    "years": "2025-Present"
+  },
+  {
+    "name": "Osama Fayyaz",
+    "status": "Current",
+    "category": "PhD Student",
+    "title": "Ph.D. Student",
+    "topic": "Upcycling and recycling post-consumer polymer into valuable products",
+    "years": "2026-Present",
+    "photo": "/media/people/Osama.jpeg",
+    "link": "https://www.linkedin.com/in/osama-fayyaz-733755224/"
   },
   {
     "name": "LAYAN MESHAL ALMUTAIRI ",
