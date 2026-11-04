@@ -59,10 +59,12 @@
   },
   {
     "name": "Conductive PLA",
+    "form": "Filament",
     "is_new": false
   },
   {
     "name": "ASA",
+    "form": "Filament",
     "is_new": false
   },
   {
