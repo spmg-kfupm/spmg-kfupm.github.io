@@ -46,5 +46,43 @@
     "form": "Pellets",
     "type": "Standard",
     "is_new": false
+  },
+  {
+    "name": "PC",
+    "form": "Filament",
+    "is_new": false
+  },
+  {
+    "name": "PETG",
+    "form": "Filament",
+    "is_new": false
+  },
+  {
+    "name": "Conductive PLA",
+    "is_new": false
+  },
+  {
+    "name": "ASA",
+    "is_new": false
+  },
+  {
+    "name": "Continuous fiber PTEG",
+    "form": "Filament",
+    "is_new": false
+  },
+  {
+    "name": "ABS",
+    "form": "Pellets",
+    "is_new": true
+  },
+  {
+    "name": "PETG ",
+    "form": "Pellets",
+    "is_new": true
+  },
+  {
+    "name": "Frrofric Oxide",
+    "form": "Powder",
+    "is_new": true
   }
 ]
