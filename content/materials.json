@@ -50,41 +50,49 @@
   {
     "name": "PC",
     "form": "Filament",
+    "type": "Standard",
     "is_new": false
   },
   {
     "name": "PETG",
     "form": "Filament",
+    "type": "Standard",
     "is_new": false
   },
   {
     "name": "Conductive PLA",
     "form": "Filament",
+    "type": "Conductive material",
     "is_new": false
   },
   {
     "name": "ASA",
     "form": "Filament",
+    "type": "Standard",
     "is_new": false
   },
   {
     "name": "Continuous fiber PTEG",
     "form": "Filament",
+    "type": "High performance continuous filament",
     "is_new": false
   },
   {
     "name": "ABS",
     "form": "Pellets",
+    "type": "Standard",
     "is_new": true
   },
   {
     "name": "PETG ",
     "form": "Pellets",
+    "type": "Standard",
     "is_new": true
   },
   {
     "name": "Frrofric Oxide",
     "form": "Powder",
+    "type": "Standard",
     "is_new": true
   }
 ]
