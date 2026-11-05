@@ -113,5 +113,12 @@
     "description": "Solvent parts-cleaning station for removing residue and contaminants from printed parts and tooling.",
     "photo": "/media/equipment/parts-washer.jpg",
     "is_new": true
+  },
+  {
+    "name": "Micro compounder/twin crew and filament maker unit (soon)",
+    "category": "Recycling & preparation",
+    "description": "Making your own materials using two feeders and then converting into filaments for FDM",
+    "photo": "/media/equipment/machine.jpg",
+    "is_new": true
   }
 ]
