@@ -11,10 +11,11 @@
     ["publications", "publications.html", "Publications", "Publications", "Selected recent journal articles and conference papers."],
     ["news", "news.html", "News & Events", "News & Events", "Lab news, upcoming events, awards and visits."],
     ["collaborate", "collaborate.html", "Collaborate", "Work With Us", "Partnerships with academic and industrial researchers."],
+    ["global", "global-collaboration.html", "Global Collaboration", "Global Collaboration", "Our partners and joint work with universities, institutes and industry around the world."],
     ["join", "join.html", "Join Us", "Join the Group", "For prospective MS and PhD students, postdocs and undergraduates."],
     ["contact", "contact.html", "Contact", "Get in Touch", "Contact details and research profiles."]
   ];
-  var FILES = ["settings", "research", "equipment", "materials", "people", "publications", "events"];
+  var FILES = ["settings", "research", "equipment", "materials", "people", "publications", "events", "collaborations"];
   var page = document.body.getAttribute("data-page") || "home";
 
   // Old single-page links (e.g. /#people) open the matching page.
@@ -85,13 +86,13 @@
   // ---------- Load content ----------
   Promise.all(FILES.map(function (f) {
     return fetch("content/" + f + ".json", { cache: "no-cache" }).then(function (r) {
-      if (!r.ok) throw new Error(f + ".json could not be loaded (" + r.status + ")");
+      if (!r.ok) { if (f === "collaborations" && r.status === 404) return "[]"; throw new Error(f + ".json could not be loaded (" + r.status + ")"); }
       return r.text();
     }).then(function (t) {
       try { return JSON.parse(t); } catch (e) { throw new Error("content/" + f + ".json has a formatting mistake: " + e.message); }
     });
   })).then(function (d) {
-    render({ s: d[0] || {}, research: arr(d[1]), equipment: arr(d[2]), materials: arr(d[3]), people: arr(d[4]), pubs: arr(d[5]), events: arr(d[6]) });
+    render({ s: d[0] || {}, research: arr(d[1]), equipment: arr(d[2]), materials: arr(d[3]), people: arr(d[4]), pubs: arr(d[5]), events: arr(d[6]), collabs: arr(d[7]) });
   }).catch(function (e) {
     if (location.protocol === "file:") {
       showError("<strong>This page loads its content from the <code>content</code> folder, which browsers block when a file is opened directly.</strong> Open the online address instead: https://spmg-kfupm.github.io");
@@ -249,6 +250,42 @@
     if (has("collabName")) $("collabName").textContent = K.name || "";
     if (has("collabEmail")) $("collabEmail").textContent = K.email || "";
 
+    // Global collaboration
+    if (has("collabList")) {
+      var cl = D.collabs.filter(function (c) { return c.partner; });
+      var countries = [];
+      cl.forEach(function (c) { if (c.country && countries.indexOf(c.country) === -1) countries.push(c.country); });
+      countries.sort();
+      if (has("collabSummary")) $("collabSummary").textContent = cl.length ? cl.length + (cl.length === 1 ? " partner" : " partners") + " in " + countries.length + (countries.length === 1 ? " country" : " countries") : "";
+      var curC = "All";
+      var renderCollab = function () {
+        var list = cl.filter(function (c) { return curC === "All" || c.country === curC; });
+        list.sort(function (a, b) { return (a.status === "Completed") - (b.status === "Completed") || String(a.country || "").localeCompare(String(b.country || "")) || String(a.partner).localeCompare(String(b.partner)); });
+        $("collabList").innerHTML = list.length ? list.map(function (c) {
+          var logo = '<div class="plogo">' + (c.logo ? '<img src="' + esc(src(c.logo)) + '" alt="' + esc(c.partner) + ' logo" loading="lazy">' : '<span>' + esc(initials(c.partner)) + '</span>') + '</div>';
+          var meta = [c.country, c.type, c.since ? "Since " + c.since : ""].filter(Boolean).map(esc).join(" · ");
+          return '<article class="partner">' + logo + '<div class="text"><div class="pmeta">' + meta + (c.status === "Completed" ? '<span class="done">Completed</span>' : '') + '</div>' +
+            '<h3>' + link(c.partner, c.link) + '</h3>' +
+            (c.department ? '<p class="pdept">' + esc(c.department) + '</p>' : '') +
+            (c.collaborators ? '<p class="pwho">' + esc(c.collaborators) + '</p>' : '') +
+            (c.description ? '<p>' + esc(c.description) + '</p>' : '') + '</div></article>';
+        }).join("") : '<p class="empty">Our international collaborations will be listed here.</p>';
+      };
+      if (has("collabFilters") && countries.length > 1) {
+        $("collabFilters").innerHTML = ["All"].concat(countries).map(function (c, i) {
+          var n = c === "All" ? cl.length : cl.filter(function (x) { return x.country === c; }).length;
+          return '<button type="button" id="cfilter-' + i + '" data-c="' + esc(c) + '" aria-pressed="' + (c === "All") + '">' + esc(c) + '<span class="count">' + n + '</span></button>';
+        }).join("");
+        $("collabFilters").addEventListener("click", function (e) {
+          var b = e.target.closest("button"); if (!b) return;
+          curC = b.getAttribute("data-c");
+          Array.prototype.forEach.call(this.querySelectorAll("button"), function (x) { x.setAttribute("aria-pressed", x === b); });
+          renderCollab();
+        });
+      }
+      renderCollab();
+    }
+
     // Join
     var J = S.join || {};
     if (has("joinIntro")) $("joinIntro").textContent = J.intro || "";
@@ -288,7 +325,7 @@
     $("site-footer").innerHTML = '<footer><div class="wrap stack"><div class="cols">' +
       '<div><b>' + esc(S.group_name || "") + '</b><span>' + esc(S.department || "") + '</span></div>' +
       '<div><b>Contact</b><span>' + esc(K.name || "") + '</span><span>' + esc(K.email || "") + '</span><span>' + esc(K.phone || "") + '</span></div>' +
-      '<div><b>Explore</b><a href="collaborate.html">Collaborate with us</a><a href="join.html">Join the group</a><a href="publications.html">Publications</a></div>' +
+      '<div><b>Explore</b><a href="collaborate.html">Collaborate with us</a><a href="global-collaboration.html">Global collaboration</a><a href="join.html">Join the group</a><a href="publications.html">Publications</a></div>' +
       '</div><div class="base"><span>© ' + new Date().getFullYear() + ' ' + esc(S.group_name || "") + ', KFUPM. All rights reserved.</span>' +
       '<a href="https://app.pagescms.org" target="_blank" rel="noopener">Admin</a></div></div></footer>';
   }

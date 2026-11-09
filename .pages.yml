@@ -164,6 +164,57 @@ content:
         label: Link for more details
         type: string
 
+  # ---------------- GLOBAL COLLABORATION ----------------
+  - name: collaborations
+    label: Global Collaboration
+    type: file
+    path: content/collaborations.json
+    format: json
+    list: true
+    fields:
+      - name: partner
+        label: Partner institution or company
+        type: string
+        required: true
+      - name: country
+        label: Country
+        type: string
+        required: true
+      - name: type
+        label: Type
+        type: select
+        default: University
+        options:
+          values: [University, Research institute, Industry, Government, Other]
+      - name: department
+        label: Department or lab (optional)
+        type: string
+      - name: collaborators
+        label: Collaborators (names)
+        description: e.g. Prof. A. Smith, Dr. B. Lee
+        type: string
+      - name: description
+        label: What we work on together
+        type: text
+      - name: since
+        label: Since (year)
+        type: string
+      - name: status
+        label: Status
+        description: Completed collaborations are listed after active ones.
+        type: select
+        default: Active
+        options:
+          values: [Active, Completed]
+      - name: logo
+        label: Logo (optional, square)
+        type: image
+        options:
+          path: media/partners
+      - name: link
+        label: Website link
+        type: string
+
   # ---------------- MATERIALS ----------------
   - name: materials
     label: Materials
